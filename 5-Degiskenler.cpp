@@ -9,7 +9,29 @@ string: Kelime ve cümleleri tutar. "Fatih" gibi ifade edilir (Çift tırnak ile
 bool: true ya da false değerleri tutar. Yani doğru ya da yanlış mantıksal ifadeleri
  */
 
+/*
 
+Değişkenlere isim verirken dikkat edilmesi gerekenler:
+  - Değişken isimleri yalnızca
+    -harfler
+    -rakamlar
+    -alt tire (_) içerebilir
+
+  - Değişken isimleri rakam ile başlayamaz
+  - İsimler büyük ve küçük harflere duyarlıdır
+  - İsimler boşluk ya da özel karakter içeremez
+  - Değişken isimleri C++ tarafından ayrılmış isimleri alamaz (final, int vs)
+
+*/
+
+/*
+Sabit Değer atama
+
+Herhangi bir değişkene sabit bir değer atamak ve sonrasında kod içerisinde değişmesini engellemek için
+const anahtar kelimesi başına getirilir:
+  - const PI = 3; // Sonradan PI = 5; yapılırsa hata verir
+
+*/
 
 // Veri tiplerini yazdırma
 #include <iostream>
@@ -23,6 +45,9 @@ int main() {
 
   // Aynı anda deklere etme ve değer atama yapılabilir
   int pi = 3;
+
+  // Aynı anda birden fazla değişken oluşturulabilir
+  int x = 5, y = 10, z = 20;
 
   // Değişkenin değeri kod içerisinde değiştirilebilr
   int a = 23;
